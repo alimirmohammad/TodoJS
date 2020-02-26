@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List with Delete</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="TodoDeleteEdit.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Montserrat:700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="top">
+        <h1>To Do</h1>
+        <input id="new_todo" type="text">
+        <button class="btn btn-success" onclick="addTodo()">Add</button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="pending">
+                <h2>Todo</h2>
+                <ul id="pending">
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="done">
+                <h2>Done</h2>
+                <ul id="done">
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="trash">
+                <h2>Trash</h2>
+                <ul id="trash">
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="TodoDeleteEdit.js"></script>
+</body>
+</html>
